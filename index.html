@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirley's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+    <nav id = "desktop-nav">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Shirley Chen Logo" 
+            style="width: 100px; height: auto;">
+        </div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="./assets/Shirley Chen Resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shirley Chen</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+        </div>
+    </nav>
+    <section id="profile"> 
+        <div class = "section__text">
+            <h1 class = "title"> Hi there, my name is Shirley!</h1>
+            <p class = "section__text__p2"> Currently a Bachelor of Information iSchool student with a growing passion in UX/UI design and data science :) </p>
+        </div>
+        <!-- <div class = "btn-container">
+            <button class = "btn btn-color-2"   
+                    onclick="window.open('./assets/Shirley Chen Resume.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" 
+                    onclick="location.href='./#contact'">
+                Let's Chat!
+            </button>
+        </div>
+        <div id = "socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
+            class = "icon" onclick = "location.href='https://www.linkedin.com/in/shirleychen003'">
+            <img src="./assets/github.png" alt="My GitHub Profile"
+            class = "icon" onclick = "location.href='https://github.com/shirleychen003'">
+        </div> -->
+    </section>
+    
+    <section id="projects"> 
+
+    </section>
+
+    <section id="experience"> 
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
