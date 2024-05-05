@@ -145,9 +145,10 @@ a:hover {
 section {
     padding-top: 4vh;
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0 auto;
     box-sizing: border-box;
     min-height: fit-content;
+    max-width: 100%;
 }
 
 .section-container {
@@ -160,7 +161,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    height: 50vh;
+    height: 70vh;
     background-color: #f0f0f0; 
     margin-left: 0; 
     margin-right: 0;
@@ -184,11 +185,161 @@ section {
     text-align: center;
 }
 
+.section__text__p2 {
+    font-size: 2rem;
+    text-align: center;
+}
 #socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
+}
+
+/* PROJECTS */
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%; 
+    margin-right: 10%; 
+}
+
+.overview-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px; 
+}
+
+.section__header {
+    font-size: 40px;
+}
+.section__text__p1, .project__text__p {
+    font-size: 18px;
+}
+
+.project__header {
+    font-size: 3rem;
+}
+
+.project__pic-container, .project__text-container {
+    flex: 1;
+}
+
+.project__pic-container img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 20px;
+    border-style: solid;
+}
+
+/* Subscriptions Super Simplified */
+
+.SSS-project {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px; 
+}
+
+.SSS-project .project__pic-container,
+.SSS-project .project__text-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.SSS-project .project__pic-container img {
+    max-width: 548px;
+    max-height: 367px;
+    border-radius: 20px;
+    border-style: solid;
+    margin-bottom: 40px;
+}
+
+.SSS-project .project__text-container {
+    padding-left: 20px;
+    justify-content: space-evenly;
+}
+
+.SSS-button {
+    background-color: black; 
+    display: block;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+  }
+
+  .SSS-button:hover {
+    background-color: #4D4C5C;
+}
+
+/* Chick Fil A */
+.CFA-project {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px; 
+}
+
+.CFA-project .project__pic-container,
+.CFA-project .project__text-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+
+.CFA-project .project__pic-container img {
+    max-width: 548px;
+    max-height: 367px;
+    border-radius: 20px;
+    border-style: solid;
+    margin-bottom: 40px;
+    order: 0;
+}
+
+.CFA-project .project__text-container {
+    padding-right: 20px;
+    justify-content: space-evenly;
+    order: 1;
+}
+
+.CFA-button {
+    background-color: black; 
+    display: block;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+  }
+
+  .CFA-button:hover {
+    background-color: #4D4C5C;
+}
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.8rem 4%;
+    border-top: 1.5px solid black;
+
+}
+
+.footer-text {
+    font-size: 1rem;
 }
 
 /* ICONS */

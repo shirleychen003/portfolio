@@ -11,14 +11,15 @@
     
     <nav id = "desktop-nav">
         <div class="logo">
-            <img src="./assets/logo.png" alt="Shirley Chen Logo" 
-            style="width: 100px; height: auto;">
+            <a href="index.html"> 
+                <img src="./assets/logo.png" alt="Shirley Chen Logo" style="width: 100px; height: auto;">
+            </a>
         </div>
         <div>
             <ul class = "nav-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experiences">Experiences</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
                 <li><a href="./assets/Shirley Chen Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </div>
@@ -63,12 +64,63 @@
     </section>
     
     <section id="projects"> 
+        <div class="overview-section">
+            <h1 class="section__header">My Projects</h1>
+            <p class="section__text__p1">For both school assignments
+                 and personal development, I have been involved with
+                  many projects that have taught me a wide variety of
+                  skills! Ranging from UI/UX design projects to address
+                   common user pain points in a general issue, to 
+                   building this website from scratch using HTML, CSS, 
+                   and Javascript! Read more about the different 
+                   projects I have had the opportunity to work on down
+                    below:</p>
+        </div>
 
+        <div class="SSS-project">
+            <div class="project__pic-container">
+                <img src="./assets/SSS_thumbnail.png" 
+                alt="Subscription Super Simplified">
+            </div>
+            <div class="project__text-container">
+                <p class="project__text__p">CASE STUDY - UX/UI DESIGN</p>
+                <h1 class="project__header">Subscriptions Super Simplified</h1>
+                <p class="project__text__p">A subscriptions service manager app to
+                     assist with preventable issues that commonly emerge.</p>
+                <button class="SSS-button">READ MORE</button> 
+            </div>
+        </div>
+         
+        <div class = "CFA-project" >
+            <div class = "project__pic-container">
+                <img src="./assets/chickfila.png" 
+                alt="Chick Fil A">
+            </div>
+            <div class="project__text-container">
+                <p class="project__text__p">CASE STUDY - UX/UI DESIGN</p>
+                <h1 class="project__header">Chick-Fil-A Kiosk UI </h1>
+                <p class="project__text__p"> Creation of a Chick Fil A kiosk</p>
+                <button class="CFA-button">READ MORE</button> 
+            </div>
+        </div>
+
+        <div class = "allprojects-container">
+            <button class = "allprojects"   
+                    onclick="window.open('./assets/Shirley Chen Resume.pdf')">
+                View All Projects
+            </button>
     </section>
 
     <section id="experience"> 
 
     </section>
+
+    <!-- FOOTER -->
+    <footer class = "footer">
+        <div class = "footer-text">
+            <p> <i>Thanks for visiting, come back soon !! *:･ﾟ✧*:･ﾟ✧ </i>  Shirley ©hen 2024</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
