@@ -19,6 +19,10 @@ p {
     color: rgb(85, 85, 85);
 }
 
+#space {
+    height: 100px;
+}
+
 /* TRANSITION */
 
 a, .btm {
@@ -183,6 +187,7 @@ section {
 .title {
     font-size: 4rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .section__text__p2 {
@@ -212,6 +217,7 @@ section {
 
 .section__header {
     font-size: 40px;
+    margin-bottom: 1rem;
 }
 .section__text__p1, .project__text__p {
     font-size: 18px;
@@ -225,42 +231,8 @@ section {
     flex: 1;
 }
 
-.project__pic-container img {
-    max-width: 40%;
-    height: auto;
-    border-radius: 20px;
-    border-style: solid;
-}
-
-/* Subscriptions Super Simplified */
-
-.SSS-project {
-    display: flex;
-    align-items: stretch;
-    margin-bottom: 30px; 
-}
-
-.SSS-project .project__pic-container,
-.SSS-project .project__text-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%; 
-}
-
-.SSS-project .project__pic-container img {
-    max-width: 548px;
-    max-height: 367px;
-    border-radius: 20px;
-    border-style: solid;
-    margin-bottom: 40px;
-}
-
-.SSS-project .project__text-container {
-    padding-left: 20px;
-    justify-content: space-evenly;
-}
-
-.SSS-button {
+.allprojects {
+    margin-top: 10px;
     background-color: black; 
     display: block;
     border: none;
@@ -269,7 +241,67 @@ section {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-size: 17px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+.nav-projects {
+    margin-top: 10px;
+    text-align: center;
+}
+.nav-projects .like-it {
     font-size: 20px;
+}
+
+.allprojects:hover {
+    background-color: #4D4C5C;
+}
+
+.nav-projects .like-it {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Subscriptions Super Simplified */
+.SSS-project {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    margin-bottom: 30px;
+}
+
+.SSS-project img {
+    max-width: 548px; 
+    border-radius: 20px;
+    border-style: solid;
+    margin-right: 30px; 
+    flex-shrink: 0; 
+}
+
+.SSS-project .project__text-container {
+    max-width: 548px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    flex-grow: 1; 
+    text-align: right;
+}
+
+.SSS-button {
+    width: 548px;
+    background-color: black; 
+    display: block;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
     transition: background-color 0.3s;
     border-radius: 20px;
   }
@@ -281,33 +313,29 @@ section {
 /* Chick Fil A */
 .CFA-project {
     display: flex;
-    align-items: stretch;
-    margin-bottom: 30px; 
+    justify-content: center;
+    align-items: stretch; 
+    margin-bottom: 30px;
 }
 
-.CFA-project .project__pic-container,
-.CFA-project .project__text-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%; 
-}
-
-.CFA-project .project__pic-container img {
-    max-width: 548px;
-    max-height: 367px;
+.CFA-project img {
+    max-width: 548px; 
     border-radius: 20px;
     border-style: solid;
-    margin-bottom: 40px;
-    order: 0;
+    margin-left: 30px; 
+    flex-shrink: 0; 
 }
 
 .CFA-project .project__text-container {
-    padding-right: 20px;
+    max-width: 548px; 
+    display: flex;
+    flex-direction: column; 
     justify-content: space-evenly;
-    order: 1;
+    flex-grow: 1; 
 }
 
 .CFA-button {
+    width: 548px;
     background-color: black; 
     display: block;
     border: none;
