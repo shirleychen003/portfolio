@@ -1,0 +1,48 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items vertically */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-info {
+    flex: 1;
+    margin-right: 1rem;
+    height: 400px; /* Match the height of the image */
+    align-items: flex-start; /* Align items at the start */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out items evenly */
+}
+
+.about img {
+    width: 400px; 
+    height: auto;
+}
+
+.skills {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.skills h1 {
+    font-size: 25px;
+    margin-bottom: 2rem;;
+}
+.skills img {
+    margin-right: 30px;
+    justify-content: space-evenly;
+}
