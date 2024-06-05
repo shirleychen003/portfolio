@@ -1,0 +1,127 @@
+/* GENERAL */
+
+@import url("https://api.fontshare.com/css?f[]=satoshi@500,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Satoshi', sans-serif;
+}
+
+.title {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #f0f0f0; 
+    border-bottom: 1.5px solid black;
+}
+
+.overview-research {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.ideation {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 2000;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 20;
+}
+
+.section_header {
+    font-size: 30px;
+    margin-top: 30px;
+}   
+
+.exclamation {
+    font-size: 28px;
+    text-align: center;
+}
+.exclamation strong {
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+p strong {
+    font-weight: bold;
+    color: black;
+}
+
+.text {
+    width: 800px;
+    margin: auto;
+}
+
+.team, .timeline, .role, .tools {
+    max-width: 800px;
+    display: inline-flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.process {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 3%;
+}
+
+.persona {
+    text-align: justify;
+}
+
+/* IMAGES */
+.title img, .overview-research img {
+    max-width: 800px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.persona img {
+    float: right; 
+    margin: 0 20px 10px 20px; 
+    width: 200px; 
+}
+
+.ideation img {
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.8rem 4%;
+    border-top: 1.5px solid black;
+
+}
+
+.footer-text {
+    font-size: 1rem;
+}
